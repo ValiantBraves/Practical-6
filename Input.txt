@@ -1,0 +1,41 @@
+   A B C D E F G
+A [0 1 1 0 0 0 0]  // A is connected to B, C
+B [1 0 1 1 1 0 0]  // B is connected to A, C, D, E
+C [1 1 0 1 0 0 1]  // C is connected to A, B, D, G
+D [0 1 1 0 1 0 1]  // D is connected to B, C, E, G
+E [0 1 0 1 0 1 1]  // E is connected to B, D, F, G
+F [0 0 0 0 1 0 1]  // F is connected to E, G
+G [0 0 1 1 1 1 0]  // G is connected to C, D, E, F
+
+0 1 1 0 0 0 0
+1 0 1 1 1 0 0
+1 1 0 1 0 0 1
+0 1 1 0 1 0 1
+0 1 0 1 0 1 1
+0 0 0 0 1 0 1
+0 0 1 1 1 1 0
+
+0 1 4 0 0 0 0
+1 0 2 3 10 0 0
+4 2 0 6 0 0 3
+0 3 6 0 5 0 0
+0 10 0 5 0 7 2
+0 0 0 0 7 0 5
+0 0 3 0 2 5 0
+
+  A B C D E F G
+A n 1 4 n n n n
+B 1 n 2 3 10 n n
+C 4 2 n 6 n n 3
+D n 3 6 n 5 n 1
+E n 10 n 5 n 7 2
+F n n n n 7 n 5
+G n n 3 1 2 5 n
+
+n 1 4 n n n n
+1 n 2 3 10 n n
+4 2 n 6 n n 3
+n 3 6 n 5 n 1
+n 10 n 5 n 7 2
+n n n n 7 n 5
+n n 3 1 2 5 n
